@@ -1,0 +1,25 @@
+.pad_menu{
+    background-color: black
+}
+.Title{
+    font-display: bold;
+    font-size: 30px;
+}
+.button{
+    margin-left: 185px
+}
+.Random{
+    background-color: #80CACA
+}
+.WL {
+    background-color: darkslategray;
+    font-size: 18px;
+   
+}
+.Score{
+    background-color: #80CACA
+}
+.button2{
+    text-align: center
+}
+
