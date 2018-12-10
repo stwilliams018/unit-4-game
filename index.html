@@ -8,7 +8,6 @@
     <link rel="stylesheet"  type="text/css" href="Assets/css/reset.css">
     <script src="Assets/javascript/game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
   </head>
   <body onload="initialValues()">
     <div class="pad_menu">
@@ -28,7 +27,8 @@
                 <p>You will win the game by matching your total score to random number, you lose the game if your total score gies above the random number</p><br/>
                 <p>The value of each crystal is hidden from you until you click on it</p><br/>
                 <p>Each time when the game starts, the game will change the values of each crystal</p><br/>
-                <br/>   
+                <br/>
+                <h1 id=Eme></h1><h1 id=Dia></h1><h1 id=Rub></h1><h1 id=Yel></h1>   
             </div>
           </div>
          </div> 
@@ -42,22 +42,26 @@
                 <h1 id=Random></h1>
                 </div>
             </div>
-            <div class="col-md-2 p-3 mb-5 bg-info text-white">
+            <div class="col-md-1 p-3 mb-5 bg-info text-white">
                 <div class="WL">   
                 </div>
             </div>
             <div class="col-md-2 p-3 mb-5 bg-info text-white">
-                <div class="WL">
-                <h1>Wins:</h1>
-                <h1 id=Wins></h1><br/>
-                <h1>Loses:</h1>
-                <h1 id=Loses></h1>
+                <div class="W">
+                <h1 id=CS>Wins:</h1>
+                <h1 id=Wins></h1>
                 </div>
             </div>
-            <div class="col-lg-2 p-3 mb-5 bg-info text-white">
+            <div class="col-md-2 p-3 mb-5 bg-info text-white">
+                    <div class="L">
+                    <h1 id=CS>Loses:</h1>
+                    <h1 id=Loses></h1>
+                    </div>
+            </div>
+            <div class="col-lg-1 p-3 mb-5 bg-info text-white">
                     <div class="WL">
                     </div>
-                </div>
+            </div>
             <div class="col-lg-3 mb-5 p-3 bg-info text-white">
                     <div class="Score">
                     <h1 id=CS>Score</h1>
@@ -69,18 +73,24 @@
     </div>
      <div class="button2">
             <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby3.png" height="100" id="Emerald"/>
+                    <img src="Assets/images/Ruby4.png" height="100" id="Emerald" onclick="Eme()"/>
             </button>
             <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                        <img src="Assets/images/Ruby3.png" height="100" id= "Diamond"/>
+                        <img src="Assets/images/Ruby4.png" height="100" id= "Diamond"/>
              </button>
              <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby3.png" height="100"id="Ruby"/>
+                    <img src="Assets/images/Ruby4.png" height="100"id="Ruby"/>
             </button>
             <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby3.png" height="100" id="Yellow"/>
+                    <img src="Assets/images/Ruby4.png" height="100" id="Yellow"/>
             </button>
             <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>    
     </div>
   </body>
+  <script>
+      $(document).ready(function(){
+        var myEme = $("Eme");
+        myEme.hide();
+        });
+  </script>
 </html>

@@ -1,5 +1,6 @@
 .pad_menu{
-    background-color: black
+   /* background-image: url("Assets/images/background.jpg")*/
+   background-color: rgb(5, 37, 22)
 }
 .Title{
     font-display: bold;
@@ -42,4 +43,16 @@
 .Ins{
     font-size: 20px;
     color: black
+}
+.W{
+    font-size:32px;
+    font-weight: bolder;
+    color: rgb(43, 233, 106); 
+    text-align: center;
+}
+.L{
+    font-size:32px;
+    font-weight: bolder;
+    color: rgb(148, 20, 20); 
+    text-align: center;
 }
