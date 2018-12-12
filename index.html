@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crystals Collector</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
     <link rel="stylesheet"  type="text/css" href="Assets/css/style.css">
     <link rel="stylesheet"  type="text/css" href="Assets/css/reset.css">
-    <script src="Assets/javascript/game.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="Assets/javascript/game.js"></script>
+    
   </head>
   <body onload="initialValues()">
     <div class="pad_menu">
@@ -28,7 +30,6 @@
                 <p>The value of each crystal is hidden from you until you click on it</p><br/>
                 <p>Each time when the game starts, the game will change the values of each crystal</p><br/>
                 <br/>
-                <h1 id=Eme></h1><h1 id=Dia></h1><h1 id=Rub></h1><h1 id=Yel></h1>   
             </div>
           </div>
          </div> 
@@ -54,8 +55,9 @@
             </div>
             <div class="col-md-2 p-3 mb-5 bg-info text-white">
                     <div class="L">
-                    <h1 id=CS>Loses:</h1>
-                    <h1 id=Loses></h1>
+                    <h1 id=CS>Losses:</h1>
+                    <h1 id=Losses></h1>
+                    <br/>
                     </div>
             </div>
             <div class="col-lg-1 p-3 mb-5 bg-info text-white">
@@ -72,25 +74,19 @@
         </div>
     </div>
      <div class="button2">
-            <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby4.png" height="100" id="Emerald" onclick="Eme()"/>
+            <button type="submit" style="background-color:transparent; border-color:transparent;">
+                    <img src="Assets/images/Ruby4.png" height="100" id="Ruby"/>
             </button>
             <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                        <img src="Assets/images/Ruby4.png" height="100" id= "Diamond"/>
+                        <img src="Assets/images/white.png" height="100" id= "Diamond"/>
              </button>
              <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby4.png" height="100"id="Ruby"/>
+                    <img src="Assets/images/green.png" height="100"id="Emerald"/>
             </button>
             <button type="submit" style="background-color:transparent; border-color:transparent;"> 
-                    <img src="Assets/images/Ruby4.png" height="100" id="Yellow"/>
+                    <img src="Assets/images/yellow.png" height="100" id="Yellow"/>
             </button>
             <br/><br/><br/> <br/><br/><br/> <br/><br/><br/>    
     </div>
   </body>
-  <script>
-      $(document).ready(function(){
-        var myEme = $("Eme");
-        myEme.hide();
-        });
-  </script>
 </html>
